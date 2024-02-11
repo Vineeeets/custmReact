@@ -1,0 +1,44 @@
+/* with the rule * { box-sizing: border-box; }, every element on the page will
+ use the border-box value for its box-sizing property. This helps ensure a more 
+ consistent and intuitive layout, simplifying calculations for widths and heights in
+ your stylesheets. It's particularly useful when working with responsive designs and layouts. */
+*{
+    box-sizing: border-box;  
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+    overflow: hidden;
+    margin: 0;
+
+}
+
+.headerName{
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container{
+    display: flex;
+    width: 90vw;
+    height: 100vh;
+}
+
+.card{
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: black;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
